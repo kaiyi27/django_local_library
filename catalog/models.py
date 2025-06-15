@@ -97,12 +97,6 @@ class BookInstance(models.Model):
         """String for representing the Model object."""
         # return f'{self.id} ({self.book.title})'
         return ''
-    
-    def display_book(self):
-        """Create a string for the Genre. This is required to display genre in Admin."""
-        return self.book.title
-
-    display_book.short_description = 'Book'
 
 class Author(models.Model):
     """Model representing an author."""
